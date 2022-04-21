@@ -1,5 +1,5 @@
 package org.currency.amount;
 
-public interface Amount {
+public interface CurrencyAmount {
     double amount(double amount);
 }

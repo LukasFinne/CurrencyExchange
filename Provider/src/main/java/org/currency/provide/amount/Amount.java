@@ -1,6 +1,8 @@
 package org.currency.provide.amount;
 
-public class Amount implements org.currency.amount.Amount {
+import org.currency.amount.CurrencyAmount;
+
+public class Amount implements CurrencyAmount {
     @Override
     public double amount(double amount) {
         return amount;

@@ -4,14 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6775c025-bacc-495e-85a5-c11a1955cf1b" name="Changes" comment="Add from SEK to USD ExchangeRateTests.java">
+    <list default="true" id="6775c025-bacc-495e-85a5-c11a1955cf1b" name="Changes" comment="Add from sek to usd exchange test with amount method">
       <change afterPath="$PROJECT_DIR$/Consumer/src/main/java/org/currency/consumer/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Interface/src/main/java/org/currency/amount/Amount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Provider/src/main/java/org/currency/provide/amount/Amount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interface/src/main/java/org/currency/convert/CurrencyConversion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Provider/src/main/java/org/currency/provide/convert/Convert.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Provider/src/main/java/org/currency/provide/sek/EUR.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Provider/src/test/java/org/currency/provide/amount/AmountTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Provider/src/test/java/org/currency/provide/convert/ConvertTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Interface/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/Interface/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Interface/src/main/java/org/currency/amount/Amount.java" beforeDir="false" afterPath="$PROJECT_DIR$/Interface/src/main/java/org/currency/amount/CurrencyAmount.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Provider/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/Provider/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Provider/src/main/java/org/currency/provide/amount/Amount.java" beforeDir="false" afterPath="$PROJECT_DIR$/Provider/src/main/java/org/currency/provide/amount/Amount.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +54,7 @@
     "project.structure.side.proportion": "0.0"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.AmountTest.FromSEKToUSDExchangeCorrectlyWithAmountMethod">
+  <component name="RunManager" selected="JUnit.ConvertTest.convertMethodMultipliesCorrectly">
     <configuration name="AmountTest.AmountReturnsCorrectValue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Provider" />
       <extension name="coverage">
@@ -84,6 +87,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ConvertTest.convertMethodMultipliesCorrectly" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Provider" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.currency.provide.convert.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.currency.provide.convert" />
+      <option name="MAIN_CLASS_NAME" value="org.currency.provide.convert.ConvertTest" />
+      <option name="METHOD_NAME" value="convertMethodMultipliesCorrectly" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ExchangeRateTests.SEKToUSDExchangeCorrectAmount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Provider" />
       <extension name="coverage">
@@ -102,6 +121,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ConvertTest.convertMethodMultipliesCorrectly" />
         <item itemvalue="JUnit.AmountTest.FromSEKToUSDExchangeCorrectlyWithAmountMethod" />
         <item itemvalue="JUnit.AmountTest.AmountReturnsCorrectValue" />
         <item itemvalue="JUnit.ExchangeRateTests.SEKToUSDExchangeCorrectAmount" />
@@ -116,7 +136,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1650535373731</updated>
-      <workItem from="1650535375693" duration="4448000" />
+      <workItem from="1650535375693" duration="5556000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1650535519337</created>
@@ -160,7 +180,21 @@
       <option name="project" value="LOCAL" />
       <updated>1650539565428</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Add amount implementation">
+      <created>1650540024919</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1650540024919</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Add from sek to usd exchange test with amount method">
+      <created>1650540208315</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1650540208315</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,6 +218,8 @@
     <MESSAGE value="Add USD to SEK exchange map" />
     <MESSAGE value="Reformat method name and interface name" />
     <MESSAGE value="Add from SEK to USD ExchangeRateTests.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add from SEK to USD ExchangeRateTests.java" />
+    <MESSAGE value="Add amount implementation" />
+    <MESSAGE value="Add from sek to usd exchange test with amount method" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add from sek to usd exchange test with amount method" />
   </component>
 </project>
