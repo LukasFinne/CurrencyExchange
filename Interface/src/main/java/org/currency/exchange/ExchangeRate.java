@@ -1,4 +1,4 @@
-package org.currency.currency;
+package org.currency.exchange;
 
 import java.util.HashMap;
 

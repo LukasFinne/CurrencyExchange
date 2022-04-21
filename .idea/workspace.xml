@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6775c025-bacc-495e-85a5-c11a1955cf1b" name="Changes" comment="Add module-info.java to provider">
-      <change afterPath="$PROJECT_DIR$/Consumer/src/main/java/module-info.java" afterDir="false" />
+    <list default="true" id="6775c025-bacc-495e-85a5-c11a1955cf1b" name="Changes" comment="Add USD to SEK exchange map">
       <change afterPath="$PROJECT_DIR$/Consumer/src/main/java/org/currency/consumer/Main.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Provider/src/main/java/org/currency/provide/sek/EUR.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Provider/src/main/java/org/currency/provide/sek/USD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Consumer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Consumer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Interface/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/Interface/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Interface/src/main/java/org/currency/currencies/ExchangeRate.java" beforeDir="false" afterPath="$PROJECT_DIR$/Interface/src/main/java/org/currency/currency/ExchangeRate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/Provider/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Provider/src/main/java/org/currency/provide/sek/USD.java" beforeDir="false" afterPath="$PROJECT_DIR$/Provider/src/main/java/org/currency/provide/sek/USD.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +52,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1650535373731</updated>
-      <workItem from="1650535375693" duration="1993000" />
+      <workItem from="1650535375693" duration="2407000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1650535519337</created>
@@ -80,7 +75,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650537144113</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Add USD to SEK exchange map">
+      <created>1650537453788</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1650537453788</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -101,6 +103,7 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Add ExchangeRate.java interface" />
     <MESSAGE value="Add module-info.java to provider" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add module-info.java to provider" />
+    <MESSAGE value="Add USD to SEK exchange map" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add USD to SEK exchange map" />
   </component>
 </project>

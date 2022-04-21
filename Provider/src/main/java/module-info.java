@@ -1,7 +1,7 @@
-import org.currency.currency.ExchangeRate;
-import org.currency.provide.sek.USD;
+import org.currency.exchange.ExchangeRate;
+import org.currency.provide.sek.ToUSD;
 
 module org.currency.provider {
     requires org.currency.currencies;
-    provides ExchangeRate with USD;
+    provides ExchangeRate with ToUSD;
 }
