@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6775c025-bacc-495e-85a5-c11a1955cf1b" name="Changes" comment="Add basic command pattern menu">
-      <change afterPath="$PROJECT_DIR$/Provider/src/main/java/org/currency/provide/menu/ExchangeFromSEK.java" afterDir="false" />
+    <list default="true" id="6775c025-bacc-495e-85a5-c11a1955cf1b" name="Changes" comment="Add SEK exchange menu">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/src/main/java/org/currency/provide/menu/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/Provider/src/main/java/org/currency/provide/menu/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Provider/src/main/java/org/currency/provide/menu/ExchangeFromSEK.java" beforeDir="false" afterPath="$PROJECT_DIR$/Provider/src/main/java/org/currency/provide/menu/ExchangeFromSEK.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,7 +139,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1650535373731</updated>
-      <workItem from="1650535375693" duration="9657000" />
+      <workItem from="1650535375693" duration="12020000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1650535519337</created>
@@ -226,7 +225,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650544493345</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Add SEK exchange menu">
+      <created>1650545282057</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1650545282057</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -257,6 +263,7 @@
     <MESSAGE value="Reformat code to be more understandable" />
     <MESSAGE value="Add" />
     <MESSAGE value="Add basic command pattern menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add basic command pattern menu" />
+    <MESSAGE value="Add SEK exchange menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add SEK exchange menu" />
   </component>
 </project>
