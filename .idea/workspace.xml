@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6775c025-bacc-495e-85a5-c11a1955cf1b" name="Changes" comment="Reformat method name and interface name">
+    <list default="true" id="6775c025-bacc-495e-85a5-c11a1955cf1b" name="Changes" comment="Add from SEK to USD ExchangeRateTests.java">
       <change afterPath="$PROJECT_DIR$/Consumer/src/main/java/org/currency/consumer/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interface/src/main/java/org/currency/amount/Amount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Provider/src/main/java/org/currency/provide/amount/Amount.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Provider/src/main/java/org/currency/provide/sek/EUR.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Provider/src/test/java/org/currency/provide/sek/ExchangeRateTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Provider/src/test/java/org/currency/provide/amount/AmountTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Interface/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/Interface/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Provider/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/Provider/src/main/java/module-info.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +21,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="module-info" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -49,7 +51,23 @@
     "project.structure.side.proportion": "0.0"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.AmountTest.AmountReturnsCorrectValue">
+    <configuration name="AmountTest.AmountReturnsCorrectValue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Provider" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.currency.provide.amount.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.currency.provide.amount" />
+      <option name="MAIN_CLASS_NAME" value="org.currency.provide.amount.AmountTest" />
+      <option name="METHOD_NAME" value="AmountReturnsCorrectValue" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ExchangeRateTests.SEKToUSDExchangeCorrectAmount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Provider" />
       <extension name="coverage">
@@ -68,6 +86,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AmountTest.AmountReturnsCorrectValue" />
         <item itemvalue="JUnit.ExchangeRateTests.SEKToUSDExchangeCorrectAmount" />
       </list>
     </recent_temporary>
@@ -80,7 +99,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1650535373731</updated>
-      <workItem from="1650535375693" duration="3859000" />
+      <workItem from="1650535375693" duration="4448000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1650535519337</created>
@@ -117,7 +136,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650537958096</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Add from SEK to USD ExchangeRateTests.java">
+      <created>1650539565428</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1650539565428</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,6 +166,7 @@
     <MESSAGE value="Add module-info.java to provider" />
     <MESSAGE value="Add USD to SEK exchange map" />
     <MESSAGE value="Reformat method name and interface name" />
-    <option name="LAST_COMMIT_MESSAGE" value="Reformat method name and interface name" />
+    <MESSAGE value="Add from SEK to USD ExchangeRateTests.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add from SEK to USD ExchangeRateTests.java" />
   </component>
 </project>
