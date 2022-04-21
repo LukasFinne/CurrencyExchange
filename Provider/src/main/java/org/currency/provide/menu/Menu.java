@@ -9,7 +9,7 @@ public class Menu implements Command{
     private final Command[] commands = new Command[2];
 
     public Menu(){
-        commands[1] = new SEK();
+        commands[1] = new ExchangeFromSEK();
     }
 
     private void run() {
