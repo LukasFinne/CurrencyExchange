@@ -4,17 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6775c025-bacc-495e-85a5-c11a1955cf1b" name="Changes" comment="Add from sek to usd exchange test with amount method">
+    <list default="true" id="6775c025-bacc-495e-85a5-c11a1955cf1b" name="Changes" comment="Add CurrencyConversion.java implementation and Change names of some interfaces and methods">
       <change afterPath="$PROJECT_DIR$/Consumer/src/main/java/org/currency/consumer/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Interface/src/main/java/org/currency/convert/CurrencyConversion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Provider/src/main/java/org/currency/provide/convert/Convert.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Provider/src/main/java/org/currency/provide/sek/EUR.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Provider/src/test/java/org/currency/provide/convert/ConvertTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Interface/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/Interface/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Interface/src/main/java/org/currency/amount/Amount.java" beforeDir="false" afterPath="$PROJECT_DIR$/Interface/src/main/java/org/currency/amount/CurrencyAmount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/Provider/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/src/main/java/org/currency/provide/amount/Amount.java" beforeDir="false" afterPath="$PROJECT_DIR$/Provider/src/main/java/org/currency/provide/amount/Amount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Provider/src/test/java/org/currency/provide/convert/ConvertTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Provider/src/test/java/org/currency/provide/convert/ConvertTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +48,7 @@
     "project.structure.side.proportion": "0.0"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.ConvertTest.convertMethodMultipliesCorrectly">
+  <component name="RunManager" selected="JUnit.ConvertTest.convertMethodConvertToCorrectExchange">
     <configuration name="AmountTest.AmountReturnsCorrectValue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Provider" />
       <extension name="coverage">
@@ -82,6 +76,22 @@
       <option name="PACKAGE_NAME" value="org.currency.provide.amount" />
       <option name="MAIN_CLASS_NAME" value="org.currency.provide.amount.AmountTest" />
       <option name="METHOD_NAME" value="FromSEKToUSDExchangeCorrectlyWithAmountMethod" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConvertTest.convertMethodConvertToCorrectExchange" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Provider" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.currency.provide.convert.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.currency.provide.convert" />
+      <option name="MAIN_CLASS_NAME" value="org.currency.provide.convert.ConvertTest" />
+      <option name="METHOD_NAME" value="convertMethodConvertToCorrectExchange" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -121,6 +131,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ConvertTest.convertMethodConvertToCorrectExchange" />
         <item itemvalue="JUnit.ConvertTest.convertMethodMultipliesCorrectly" />
         <item itemvalue="JUnit.AmountTest.FromSEKToUSDExchangeCorrectlyWithAmountMethod" />
         <item itemvalue="JUnit.AmountTest.AmountReturnsCorrectValue" />
@@ -136,7 +147,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1650535373731</updated>
-      <workItem from="1650535375693" duration="5556000" />
+      <workItem from="1650535375693" duration="5957000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1650535519337</created>
@@ -194,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650540208315</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Add CurrencyConversion.java implementation and Change names of some interfaces and methods">
+      <created>1650541168964</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1650541168964</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -220,6 +238,7 @@
     <MESSAGE value="Add from SEK to USD ExchangeRateTests.java" />
     <MESSAGE value="Add amount implementation" />
     <MESSAGE value="Add from sek to usd exchange test with amount method" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add from sek to usd exchange test with amount method" />
+    <MESSAGE value="Add CurrencyConversion.java implementation and Change names of some interfaces and methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add CurrencyConversion.java implementation and Change names of some interfaces and methods" />
   </component>
 </project>
