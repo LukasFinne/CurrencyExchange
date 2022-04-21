@@ -51,7 +51,7 @@
     "project.structure.side.proportion": "0.0"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.AmountTest.AmountReturnsCorrectValue">
+  <component name="RunManager" selected="JUnit.AmountTest.FromSEKToUSDExchangeCorrectlyWithAmountMethod">
     <configuration name="AmountTest.AmountReturnsCorrectValue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Provider" />
       <extension name="coverage">
@@ -63,6 +63,22 @@
       <option name="PACKAGE_NAME" value="org.currency.provide.amount" />
       <option name="MAIN_CLASS_NAME" value="org.currency.provide.amount.AmountTest" />
       <option name="METHOD_NAME" value="AmountReturnsCorrectValue" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AmountTest.FromSEKToUSDExchangeCorrectlyWithAmountMethod" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Provider" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.currency.provide.amount.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.currency.provide.amount" />
+      <option name="MAIN_CLASS_NAME" value="org.currency.provide.amount.AmountTest" />
+      <option name="METHOD_NAME" value="FromSEKToUSDExchangeCorrectlyWithAmountMethod" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -86,6 +102,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AmountTest.FromSEKToUSDExchangeCorrectlyWithAmountMethod" />
         <item itemvalue="JUnit.AmountTest.AmountReturnsCorrectValue" />
         <item itemvalue="JUnit.ExchangeRateTests.SEKToUSDExchangeCorrectAmount" />
       </list>
