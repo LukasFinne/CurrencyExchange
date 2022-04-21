@@ -1,6 +1,6 @@
 package org.currency.provide.amount;
 
-import org.currency.provide.sek.ToUSD;
+import org.currency.provide.exchange.SEK;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
@@ -16,8 +16,8 @@ public class AmountTest {
     @Test
     void FromSEKToUSDExchangeCorrectlyWithAmountMethod(){
         Amount sek = new Amount();
-        ToUSD usd = new ToUSD();
-        double money = sek.amount(10)*usd.Rate().get("USD");
+        SEK exchange = new SEK();
+        double money = sek.amount(10)*exchange.rate().get("USD");
 
         assertThat(money).isEqualTo(1.0617149);
 

@@ -1,4 +1,4 @@
-package org.currency.provide.sek;
+package org.currency.provide.exchange;
 
 import org.junit.jupiter.api.Test;
 
@@ -8,9 +8,9 @@ public class ExchangeRateTests {
 
     @Test
     void SEKToUSDExchangeCorrectAmount(){
-        ToUSD usd = new ToUSD();
+        SEK exchange = new SEK();
         double SEK = 10.0;
-        var sum = SEK*usd.Rate().get("USD");
+        var sum = SEK*exchange.rate().get("USD");
         assertThat(sum).isEqualTo(1.0617149);
     }
 

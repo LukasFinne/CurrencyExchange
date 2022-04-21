@@ -2,14 +2,14 @@ import org.currency.amount.CurrencyAmount;
 import org.currency.convert.CurrencyConversion;
 import org.currency.exchange.ExchangeRate;
 import org.currency.provide.amount.Amount;
-import org.currency.provide.convert.Convert;
-import org.currency.provide.sek.ToUSD;
+import org.currency.provide.convert.CurrencyConverter;
+import org.currency.provide.exchange.SEK;
 
 module org.currency.provider {
     exports org.currency.provide.amount;
-    exports org.currency.provide.sek;
+    exports org.currency.provide.exchange;
     requires org.currency.currencies;
-    provides ExchangeRate with ToUSD;
+    provides ExchangeRate with SEK;
     provides CurrencyAmount with Amount;
-    provides CurrencyConversion with Convert;
+    provides CurrencyConversion with CurrencyConverter;
 }
