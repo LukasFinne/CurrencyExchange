@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6775c025-bacc-495e-85a5-c11a1955cf1b" name="Changes" comment="Add USD to SEK exchange map">
+    <list default="true" id="6775c025-bacc-495e-85a5-c11a1955cf1b" name="Changes" comment="Reformat method name and interface name">
       <change afterPath="$PROJECT_DIR$/Consumer/src/main/java/org/currency/consumer/Main.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Provider/src/main/java/org/currency/provide/sek/EUR.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/src/main/java/org/currency/provide/sek/USD.java" beforeDir="false" afterPath="$PROJECT_DIR$/Provider/src/main/java/org/currency/provide/sek/USD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Provider/src/test/java/org/currency/provide/sek/ExchangeRateTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +20,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="module-info" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -41,9 +43,35 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "17"
+    "jdk.selected.JAVA_MODULE": "17",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="ExchangeRateTests.SEKToUSDExchangeCorrectAmount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Provider" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.currency.provide.sek.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.currency.provide.sek" />
+      <option name="MAIN_CLASS_NAME" value="org.currency.provide.sek.ExchangeRateTests" />
+      <option name="METHOD_NAME" value="SEKToUSDExchangeCorrectAmount" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ExchangeRateTests.SEKToUSDExchangeCorrectAmount" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -52,7 +80,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1650535373731</updated>
-      <workItem from="1650535375693" duration="2407000" />
+      <workItem from="1650535375693" duration="3859000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1650535519337</created>
@@ -82,7 +110,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650537453788</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Reformat method name and interface name">
+      <created>1650537958096</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1650537958096</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -104,6 +139,7 @@
     <MESSAGE value="Add ExchangeRate.java interface" />
     <MESSAGE value="Add module-info.java to provider" />
     <MESSAGE value="Add USD to SEK exchange map" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add USD to SEK exchange map" />
+    <MESSAGE value="Reformat method name and interface name" />
+    <option name="LAST_COMMIT_MESSAGE" value="Reformat method name and interface name" />
   </component>
 </project>
