@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6775c025-bacc-495e-85a5-c11a1955cf1b" name="Changes" comment="Change from switch to conditional polymorphism">
-      <change beforePath="$PROJECT_DIR$/Provider/src/main/java/org/currency/provide/exchange/SEK.java" beforeDir="false" afterPath="$PROJECT_DIR$/Provider/src/main/java/org/currency/provide/exchange/SEK.java" afterDir="false" />
+    <list default="true" id="6775c025-bacc-495e-85a5-c11a1955cf1b" name="Changes" comment="Add from SEK to EUR">
+      <change afterPath="$PROJECT_DIR$/Provider/src/main/java/org/currency/provide/exchange/USD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Provider/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/Provider/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Provider/src/main/java/org/currency/provide/menu/ExchangeMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/Provider/src/main/java/org/currency/provide/menu/ExchangeMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Provider/src/main/java/org/currency/provide/menu/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/Provider/src/main/java/org/currency/provide/menu/Menu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,22 +92,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CurrencyConverterTest.convertMethodConvertToCorrectExchange" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Provider" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.currency.provide.convert.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.currency.provide.convert" />
-      <option name="MAIN_CLASS_NAME" value="org.currency.provide.convert.CurrencyConverterTest" />
-      <option name="METHOD_NAME" value="convertMethodConvertToCorrectExchange" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ExchangeRateTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Provider" />
       <extension name="coverage">
@@ -120,13 +107,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ExchangeRateTests.SEKToUSDExchangeCorrectAmount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Provider" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.currency.provide.exchange.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.currency.provide.exchange" />
+      <option name="MAIN_CLASS_NAME" value="org.currency.provide.exchange.ExchangeRateTests" />
+      <option name="METHOD_NAME" value="SEKToUSDExchangeCorrectAmount" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.ExchangeRateTests.SEKToUSDExchangeCorrectAmount" />
         <item itemvalue="JUnit.ExchangeRateTests" />
         <item itemvalue="JUnit.AmountTest" />
         <item itemvalue="JUnit.CurrencyConverterTest" />
-        <item itemvalue="JUnit.CurrencyConverterTest.convertMethodConvertToCorrectExchange" />
       </list>
     </recent_temporary>
   </component>
@@ -139,7 +142,7 @@
       <option name="presentableId" value="Default" />
       <updated>1650535373731</updated>
       <workItem from="1650535375693" duration="12212000" />
-      <workItem from="1650611959304" duration="2906000" />
+      <workItem from="1650611959304" duration="3366000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1650535519337</created>
@@ -246,7 +249,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650627998888</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Add from SEK to EUR">
+      <created>1650628130826</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1650628130826</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -280,6 +290,7 @@
     <MESSAGE value="Add SEK exchange menu" />
     <MESSAGE value="Update can now set amount of money and convert it" />
     <MESSAGE value="Change from switch to conditional polymorphism" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change from switch to conditional polymorphism" />
+    <MESSAGE value="Add from SEK to EUR" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add from SEK to EUR" />
   </component>
 </project>

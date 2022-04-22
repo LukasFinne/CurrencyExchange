@@ -13,9 +13,7 @@ public class ExchangeMenu implements Command {
     private static double currentRate = 0;
     private static double currentAmount = 0;
     private static double convertedAmount = 0;
-
     private String currency;
-
     private final Amount money = new Amount();
     private final CurrencyConverter converter = new CurrencyConverter();
     private final Scanner scanner = new Scanner(System.in);
@@ -27,7 +25,6 @@ public class ExchangeMenu implements Command {
         commands[3] = this::convert;
         commands[0] = this::shutdown;
     }
-
     private void convert(){
         convertedAmount = converter.convert(currentAmount,currentRate);
     }
@@ -49,7 +46,6 @@ public class ExchangeMenu implements Command {
         System.exit(0);
     }
     private void printMenuOption(){
-        System.out.println("----SEK----");
         System.out.println("1.CURRENCY");
         System.out.println("2.AMOUNT");
         System.out.println("3.CONVERT ");

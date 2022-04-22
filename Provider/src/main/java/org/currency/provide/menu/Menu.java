@@ -2,15 +2,17 @@ package org.currency.provide.menu;
 
 import org.currency.menu.Command;
 import org.currency.provide.exchange.SEK;
+import org.currency.provide.exchange.USD;
 
 import java.util.Scanner;
 
 public class Menu implements Command{
     private final Scanner scanner = new Scanner(System.in);
-    private final Command[] commands = new Command[2];
+    private final Command[] commands = new Command[3];
 
     public Menu(){
         commands[1] = new ExchangeMenu(new SEK());
+        commands[2] = new ExchangeMenu(new USD());
     }
 
     private void run() {
@@ -36,6 +38,7 @@ public class Menu implements Command{
     private void printMenuOption(){
         System.out.println("Which Currency do you want to exchange from?");
         System.out.println("1.SEK");
+        System.out.println("2.USD");
     }
 
 
