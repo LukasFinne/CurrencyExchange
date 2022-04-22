@@ -1,6 +1,7 @@
 package org.currency.provide.menu;
 
 import org.currency.menu.Command;
+import org.currency.provide.exchange.SEK;
 
 import java.util.Scanner;
 
@@ -9,7 +10,7 @@ public class Menu implements Command{
     private final Command[] commands = new Command[2];
 
     public Menu(){
-        commands[1] = new ExchangeFromSEK();
+        commands[1] = new ExchangeMenu(new SEK());
     }
 
     private void run() {
