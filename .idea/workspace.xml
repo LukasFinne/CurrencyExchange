@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6775c025-bacc-495e-85a5-c11a1955cf1b" name="Changes" comment="Update can now set amount of money and convert it">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/src/main/java/org/currency/provide/menu/ExchangeFromSEK.java" beforeDir="false" afterPath="$PROJECT_DIR$/Provider/src/main/java/org/currency/provide/menu/ExchangeFromSEK.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Provider/src/main/java/org/currency/provide/menu/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/Provider/src/main/java/org/currency/provide/menu/Menu.java" afterDir="false" />
+    <list default="true" id="6775c025-bacc-495e-85a5-c11a1955cf1b" name="Changes" comment="Change from switch to conditional polymorphism">
+      <change beforePath="$PROJECT_DIR$/Provider/src/main/java/org/currency/provide/exchange/SEK.java" beforeDir="false" afterPath="$PROJECT_DIR$/Provider/src/main/java/org/currency/provide/exchange/SEK.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,7 +139,7 @@
       <option name="presentableId" value="Default" />
       <updated>1650535373731</updated>
       <workItem from="1650535375693" duration="12212000" />
-      <workItem from="1650611959304" duration="2582000" />
+      <workItem from="1650611959304" duration="2906000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1650535519337</created>
@@ -241,7 +239,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650547695562</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Change from switch to conditional polymorphism">
+      <created>1650627998888</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1650627998888</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -274,6 +279,7 @@
     <MESSAGE value="Add basic command pattern menu" />
     <MESSAGE value="Add SEK exchange menu" />
     <MESSAGE value="Update can now set amount of money and convert it" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update can now set amount of money and convert it" />
+    <MESSAGE value="Change from switch to conditional polymorphism" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change from switch to conditional polymorphism" />
   </component>
 </project>

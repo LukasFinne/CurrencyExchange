@@ -9,6 +9,7 @@ public class SEK implements ExchangeRate {
     public HashMap<String, Double> rate() {
         HashMap<String,Double> map = new HashMap<>();
         map.put("USD",0.10617149);
+        map.put("EUR",0.097307791);
         return map;
     }
 }
