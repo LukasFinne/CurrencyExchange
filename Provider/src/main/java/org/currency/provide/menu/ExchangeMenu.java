@@ -49,12 +49,13 @@ public class ExchangeMenu implements Command {
         System.out.println("1.CURRENCY");
         System.out.println("2.AMOUNT");
         System.out.println("3.CONVERT ");
+        System.out.println("0.EXIT ");
     }
 
     private void exchangeMenu(){
         System.out.println("CURRENT EXCHANGE: " + currency);
         System.out.println("CURRENT AMOUNT:"+ currentAmount);
-        System.out.println("Result: " + convertedAmount + " " + currency);
+        System.out.println("RESULT: " + convertedAmount + " " + currency);
     }
 
     private void run() {
