@@ -8,10 +8,10 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 public class ExchangeRateTests {
 
     @Test
-    void SEKToUSDExchangeCorrectAmount(){
+    void SEKToUSDExchangeCorrectAmount() {
         ExchangeRate exchange = new SEK();
         double SEK = 10.0;
-        var sum = SEK*exchange.rate().get("USD");
+        var sum = SEK * exchange.rate().get("USD");
         assertThat(sum).isEqualTo(1.0617149);
     }
 

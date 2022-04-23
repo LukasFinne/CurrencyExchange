@@ -7,6 +7,7 @@ import org.currency.provide.amount.Amount;
 import org.currency.provide.convert.CurrencyConverter;
 
 import java.util.Scanner;
+
 @ConsoleMenu
 public class ExchangeMenu implements Command {
 
@@ -21,35 +22,37 @@ public class ExchangeMenu implements Command {
     private final Command[] commands = new Command[4];
     private final ConsoleMenu menu = getClass().getAnnotation(ConsoleMenu.class);
 
-    public ExchangeMenu(ExchangeRate exchange){
+    public ExchangeMenu(ExchangeRate exchange) {
         commands[1] = () -> exchangeRate(exchange);
         commands[2] = this::setAmount;
         commands[3] = this::convert;
         commands[0] = this::shutdown;
     }
-    private void convert(){
-        convertedAmount = converter.convert(currentAmount,currentRate);
+
+    private void convert() {
+        convertedAmount = converter.convert(currentAmount, currentRate);
     }
 
-    private void exchangeRate(ExchangeRate exchange){
+    private void exchangeRate(ExchangeRate exchange) {
         currency = scanner.next();
         currentRate = exchange.rate().get(currency);
         convertedAmount = 0;
     }
 
-    private void setAmount(){
+    private void setAmount() {
         double value = scanner.nextDouble();
         currentAmount = value;
         money.amount(value);
         convertedAmount = 0;
     }
-    public void shutdown(){
+
+    public void shutdown() {
         System.exit(0);
     }
 
-    private void exchangeMenu(){
+    private void exchangeMenu() {
         System.out.println("CURRENT EXCHANGE: " + currency);
-        System.out.println("CURRENT AMOUNT:"+ currentAmount);
+        System.out.println("CURRENT AMOUNT:" + currentAmount);
         System.out.println("RESULT: " + convertedAmount + " " + currency);
     }
 
