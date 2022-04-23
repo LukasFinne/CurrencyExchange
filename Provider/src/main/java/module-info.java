@@ -12,6 +12,7 @@ import org.currency.provide.menu.Menu;
 module org.currency.provider {
     exports org.currency.provide.amount;
     exports org.currency.provide.exchange;
+    requires org.jetbrains.annotations;
     requires org.currency.currencies;
     provides ExchangeRate with SEK, USD, EUR;
     provides CurrencyAmount with Amount;

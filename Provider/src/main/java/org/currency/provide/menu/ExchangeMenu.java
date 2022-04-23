@@ -2,11 +2,12 @@ package org.currency.provide.menu;
 
 import org.currency.exchange.ExchangeRate;
 import org.currency.menu.Command;
+import org.currency.menu.ConsoleMenu;
 import org.currency.provide.amount.Amount;
 import org.currency.provide.convert.CurrencyConverter;
 
 import java.util.Scanner;
-
+@ConsoleMenu
 public class ExchangeMenu implements Command {
 
 
@@ -18,6 +19,7 @@ public class ExchangeMenu implements Command {
     private final CurrencyConverter converter = new CurrencyConverter();
     private final Scanner scanner = new Scanner(System.in);
     private final Command[] commands = new Command[4];
+    private final ConsoleMenu menu = getClass().getAnnotation(ConsoleMenu.class);
 
     public ExchangeMenu(ExchangeRate exchange){
         commands[1] = () -> exchangeRate(exchange);
@@ -41,15 +43,8 @@ public class ExchangeMenu implements Command {
         money.amount(value);
         convertedAmount = 0;
     }
-
     public void shutdown(){
         System.exit(0);
-    }
-    private void printMenuOption(){
-        System.out.println("1.CURRENCY");
-        System.out.println("2.AMOUNT");
-        System.out.println("3.CONVERT ");
-        System.out.println("0.EXIT ");
     }
 
     private void exchangeMenu(){
@@ -61,7 +56,7 @@ public class ExchangeMenu implements Command {
     private void run() {
         int choice = 0;
         do {
-            printMenuOption();
+            System.out.println(menu.exchangeMenuOption());
             exchangeMenu();
             choice = readChoice(scanner);
             executeChoice(choice);

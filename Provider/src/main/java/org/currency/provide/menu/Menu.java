@@ -1,15 +1,18 @@
 package org.currency.provide.menu;
 
 import org.currency.menu.Command;
+import org.currency.menu.ConsoleMenu;
 import org.currency.provide.exchange.EUR;
 import org.currency.provide.exchange.SEK;
 import org.currency.provide.exchange.USD;
 
 import java.util.Scanner;
 
+@ConsoleMenu
 public class Menu implements Command{
     private final Scanner scanner = new Scanner(System.in);
     private final Command[] commands = new Command[4];
+    private final ConsoleMenu menu = getClass().getAnnotation(ConsoleMenu.class);
 
     public Menu(){
         commands[1] = new ExchangeMenu(new SEK());
@@ -21,7 +24,7 @@ public class Menu implements Command{
     private void run() {
         int choice = 0;
         do {
-            printMenuOption();
+            System.out.println(menu.currencyMenuOption());
             choice = readChoice(scanner);
             executeChoice(choice);
         } while (choice != 0);
@@ -33,18 +36,10 @@ public class Menu implements Command{
     private int readChoice(Scanner scanner) {
         return scanner.nextInt();
     }
-    private void printMenuOption(){
-        System.out.println("Which Currency do you want to exchange from?");
-        System.out.println("1.SEK");
-        System.out.println("2.USD");
-        System.out.println("3.EUR");
-        System.out.println("0.Exit");
-    }
 
     public void shutdown(){
         System.exit(0);
     }
-
 
     @Override
     public void execute() {
