@@ -4,4 +4,6 @@ import java.util.HashMap;
 
 public interface ExchangeRate {
     HashMap<String, Double> rate();
+
+    void startExchange();
 }
