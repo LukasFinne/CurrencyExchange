@@ -1,13 +1,11 @@
 import org.currency.amount.CurrencyAmount;
 import org.currency.convert.CurrencyConversion;
 import org.currency.exchange.ExchangeRate;
-import org.currency.menu.Command;
 import org.currency.provide.amount.Amount;
 import org.currency.provide.convert.CurrencyConverter;
 import org.currency.provide.exchange.EUR;
 import org.currency.provide.exchange.SEK;
 import org.currency.provide.exchange.USD;
-import org.currency.provide.menu.Menu;
 
 module org.currency.provider {
     exports org.currency.provide.amount;
@@ -17,5 +15,4 @@ module org.currency.provider {
     provides ExchangeRate with SEK, USD, EUR;
     provides CurrencyAmount with Amount;
     provides CurrencyConversion with CurrencyConverter;
-    provides Command with Menu;
 }
